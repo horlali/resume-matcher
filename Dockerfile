@@ -19,5 +19,7 @@ RUN pip3 install -r requirements.txt
 
 COPY . .
 
+RUN python download_nltk_resource.py
+RUN python fileReader.py
 
 CMD [ "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0" ]
