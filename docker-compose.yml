@@ -9,4 +9,4 @@ services:
     command: streamlit run app.py --server.port=8501 --server.address=0.0.0.0
     ports:
       - "8501:8501"
-    container_name: dartool-dev-app
+    container_name: resume-app
